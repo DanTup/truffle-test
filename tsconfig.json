@@ -1,15 +1,13 @@
 {
 	"compilerOptions": {
-		"typeRoots": [
-			"./node_modules/@types",
-			"./types/truffle-contracts"
-		]
+		"outDir": "out/test",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"rootDir": "test",
+		"strict": true,
+		"moduleResolution": "node"
 	},
-	"include": [
-		"**/*.ts"
-	],
 	"exclude": [
-		"node_modules",
-		"build"
+		"node_modules"
 	]
 }

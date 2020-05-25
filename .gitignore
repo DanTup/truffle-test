@@ -1,4 +1,6 @@
 build/
+geth-test-chain-dir/
 node_modules/
+out/
 package-lock.json
 types/

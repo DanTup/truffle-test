@@ -1,9 +1,21 @@
 {
 	"scripts": {
+		"generate-typings": "typechain --target=web3-v1 --glob \"build/contracts/*.abi\"",
+		"compile-contracts": "solc --abi --bin -o build/contracts --overwrite contracts/DannyContract.sol",
+		"compile-tests": "tsc -p ./",
+		"build": "npm run compile-contracts && npm run generate-typings && compile-tests",
+		"test": "npm run compile-tests && mocha out/test/**/*.js"
 	},
 	"devDependencies": {
+		"@typechain/web3-v1": "^1.0.0",
 		"@types/mocha": "^7.0.2",
+		"mocha": "^7.2.0",
 		"typechain": "^2.0.0",
 		"typescript": "^3.9.3"
+	},
+	"dependencies": {
+		"web3": "^1.2.8",
+		"web3-core": "^1.2.8",
+		"web3-eth": "^1.2.8"
 	}
 }
