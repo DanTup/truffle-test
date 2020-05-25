@@ -1,0 +1,18 @@
+{
+	"scripts": {
+		"generate-types": "typechain --target=truffle-v5 --glob \"build/contracts/*.json\"",
+		"build": "truffle compile && npm run generate-types",
+		"test": "truffle test"
+	},
+	"devDependencies": {
+		"@typechain/truffle-v5": "^2.0.2",
+		"@types/chai": "^4.2.11",
+		"@types/chai-as-promised": "^7.1.2",
+		"@types/mocha": "^7.0.2",
+		"chai": "^4.2.0",
+		"truffle": "^5.1.27",
+		"ts-node": "^8.10.1",
+		"typechain": "^2.0.0",
+		"typescript": "^3.9.3"
+	}
+}

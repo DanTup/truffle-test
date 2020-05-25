@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"typeRoots": [
+			"./node_modules/@types",
+			"./types/truffle-contracts"
+		]
+	},
+	"include": [
+		"**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"build"
+	]
+}
